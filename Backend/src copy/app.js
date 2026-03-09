@@ -7,9 +7,6 @@ import { config } from "dotenv";
 config();
 
 const app = express();
-app.get("/", (req, res) => {
-  res.send("AI Resume Builder Backend is Running 🚀");
-});
 app.use(express.json());
 app.use(express.urlencoded({ extended: true }));
 app.use(cookieParser());
